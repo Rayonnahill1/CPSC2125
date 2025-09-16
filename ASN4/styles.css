@@ -1,0 +1,40 @@
+/* styles.css — put in ASN4 folder */
+
+:root{
+  --max-width: 960px;
+  --gap: 1rem;
+  --accent: #2a6f97;
+  --muted: #555;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height:1.5;
+  margin:0;
+  color: #222;
+  padding:1rem;
+  display:flex;
+  justify-content:center;
+}
+.container{
+  max-width:var(--max-width);
+  width:100%;
+  gap:var(--gap);
+}
+
+/* header */
+header{
+  border-bottom: 3px solid var(--accent);
+  padding-bottom:.5rem;
+  margin-bottom:1rem;
+}
+
+/* layout */
+main{display:grid; grid-template-columns: 2fr 1fr; gap:1rem}
+footer{margin-top:1.5rem; color:var(--muted); font-size:0.9rem}
+
+/* make small screens single column */
+@media (max-width:700px){
+  main{grid-template-columns: 1fr}
+}
