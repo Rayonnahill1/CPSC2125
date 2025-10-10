@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel - Styles Conference</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* Travel page images layout */
+        .travel-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .travel-images figure {
+            text-align: center;
+            margin: 0;
+        }
+        .travel-images img {
+            width: 300px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .travel-images figcaption {
+            margin-top: 8px;
+            font-size: 16px;
+            color: #555;
+        }
+        main section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        main h1 { font-size: 36px; margin-bottom: 20px; color: #648880; }
+        main p { font-size: 18px; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="primary-header container group">
+    <h1 class="logo"><a href="index.html">Styles <br> Conference</a></h1>
+    <h3 class="tagline">August 24–26th — Chicago, IL</h3>
+    <nav class="nav primary-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="venue.html">Venue</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main>
+    <section>
+        <h1>Travel</h1>
+        <p>Here are some notable travel spots:</p>
+        <div class="travel-images">
+            <figure>
+                <img src="assets/images/travel/LM_1917.jpg" alt="Lincoln Memorial 1917">
+                <figcaption>Lincoln Memorial, 1917</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/images/travel/Argentina.jpg" alt="Mountain in Argentina">
+                <figcaption>Mountain in Argentina</figcaption>
+            </figure>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="primary-footer container group">
+    <small>&copy; Styles Conference</small>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="venue.html">Venue</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+</html>
