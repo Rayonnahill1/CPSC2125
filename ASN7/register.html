@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rayonna Hill | Register</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Register</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="register.html" class="active">Register</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <form action="https://formspree.io/f/myzkjveq" method="POST">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label><input type="checkbox" name="subscribe"> Subscribe to newsletter</label><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br>
+
+        <label for="favcolor">Favorite Color:</label>
+        <input type="color" id="favcolor" name="favcolor"><br>
+
+        <label for="age">Age:</label>
+        <input type="range" id="age" name="age" min="1" max="100"><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Info</legend>
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio"></textarea><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="us">USA</option>
+          <option value="ca">Canada</option>
+          <option value="uk">UK</option>
+        </select><br>
+
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="file"><br>
+      </fieldset>
+
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Rayonna Hill. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
