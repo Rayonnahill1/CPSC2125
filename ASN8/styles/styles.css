@@ -1,0 +1,159 @@
+/* Assignment 8 – Responsive and Accessible Design */
+
+/* Layout setup with CSS Grid */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+  grid-template-columns: 1fr 2fr 1fr;
+  min-height: 100vh;
+  background: repeating-linear-gradient(45deg, #ffb6c1, #ffb6c1 10px, #ffcce6 10px, #ffcce6 20px);
+  color: #333;
+}
+
+/* Header */
+header {
+  grid-area: header;
+  background-color: #ff66b2;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navigation */
+nav {
+  grid-area: nav;
+  background-color: #ff99cc;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-bottom: 15px;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: white;
+  background: #ff3399;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 2px solid white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: #ff3399;
+}
+
+/* Main Content */
+main {
+  grid-area: main;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 102, 178, 0.5);
+  text-align: center;
+}
+
+/* Image Styling */
+.main-img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 3px solid #ff66b2;
+  margin-top: 15px;
+}
+
+/* Aside Section */
+aside {
+  grid-area: aside;
+  background-color: #ffe6f0;
+  text-align: center;
+  padding: 20px;
+}
+
+aside h3 {
+  color: #cc0066;
+}
+
+svg {
+  margin-top: 10px;
+  border: 3px solid #ff99cc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Footer */
+footer {
+  grid-area: footer;
+  background-color: #ff66b2;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 700px) {
+  body {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+
+  nav ul li a {
+    width: 80%;
+  }
+
+  main, aside {
+    margin: 10px;
+  }
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="text"], input[type="submit"] {
+  padding: 8px;
+  border: 2px solid #ff99cc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #ff66b2;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: #ff66b2;
+}

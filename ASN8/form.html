@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 8 – Form Page</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Assignment 8 – Form Page</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="https://www.columbusstate.edu/" tabindex="1">CSU Website</a></li>
+      <li><a href="https://www.w3.org/WAI/standards-guidelines/" tabindex="2">Web Accessibility Standards</a></li>
+      <li><a href="https://responsivedesignchecker.com/" tabindex="3">Responsive Design Checker</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Contact Form Example</h2>
+    <p>Use the form below to test accessibility and keyboard navigation.</p>
+
+    <form id="frm1">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John" tabindex="4"><br><br>
+
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe" tabindex="5"><br><br>
+
+      <input type="submit" value="Submit" tabindex="6">
+    </form>
+  </main>
+
+  <aside>
+    <h3>SVG Logo Example</h3>
+
+    <!-- Working embedded SVG logo -->
+    <object data="logo/yourlogo.svg" type="image/svg+xml" width="120" height="120" aria-label="Rayonna logo"></object>
+  </aside>
+
+  <footer>
+    <p>© 2025 Rayonna Hill | Fall Semester 2025</p>
+  </footer>
+</body>
+</html>
